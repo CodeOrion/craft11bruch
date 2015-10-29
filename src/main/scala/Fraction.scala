@@ -14,9 +14,6 @@ object Fraction {
   }
 }
 case class Fraction(nominator: Int, denominator: Int) {
-  val g = Fraction.gcd(nominator, denominator)
-  private val n = nominator/g
-  private val d = denominator / g
 
   def +(other: Fraction): Fraction =
     Fraction.of(nominator*other.denominator + other.nominator*denominator, denominator*other.denominator)
