@@ -9,5 +9,8 @@ class FractionTest extends Specification{
     "Add with different denominator" in {
       Fraction.of(1, 3) + Fraction.of(1, 4) must be equalTo Fraction.of(7, 12)
     }
+    "Reduce" in {
+      Fraction.of(26, 91) must be equalTo Fraction.of(2, 7)
+    }
   }
 }
