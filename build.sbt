@@ -1,5 +1,5 @@
 
-name := "ReactiveBackend"
+name := "craft11bruch"
 
 scalaVersion := "2.11.7"
 
